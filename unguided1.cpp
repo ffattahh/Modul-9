@@ -15,21 +15,21 @@ struct Vertex {
 // Fungsi untuk membuat graph yang direpresentasikan sebagai adjacency matrix
 vector<vector<int>> createGraph(vector<string>& vertices) {
     // Mendapatkan jumlah simpul dari user
-    int numVertices2311102019;
+    int numVertices_2311102019;
     cout << "Masukkan jumlah simpul: ";
-    cin >> numVertices2311102019;
+    cin >> numVertices_2311102019;
 
     // Memasukkan nama simpul
-    vertices.resize(numVertices2311102019);
-    for (int i = 0; i < numVertices2311102019; i++) {
+    vertices.resize(numVertices_2311102019);
+    for (int i = 0; i < numVertices_2311102019; i++) {
         cout << "Masukkan nama simpul " << i + 1 << ": ";
         cin >> vertices[i];
     }
 
     // Membangun adjacency matrix
-    vector<vector<int>> adjacencyMatrix(numVertices2311102019, vector<int>(numVertices2311102019));
-    for (int i = 0; i < numVertices2311102019; i++) {
-        for (int j = 0; j < numVertices2311102019; j++) {
+    vector<vector<int>> adjacencyMatrix(numVertices_2311102019, vector<int>(numVertices_2311102019));
+    for (int i = 0; i < numVertices_2311102019; i++) {
+        for (int j = 0; j < numVertices_2311102019; j++) {
             if (i == j) {
                 // Bobot untuk simpul yang sama selalu 0
                 adjacencyMatrix[i][j] = 0;
